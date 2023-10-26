@@ -45,7 +45,6 @@
   0% {
       scale:100%;
       color: red;
-      transform:rotate(0deg);
   }
   50% {
      scale:200%;
@@ -59,7 +58,19 @@
 }
 
 .texteanim:hover{
-  transform:rotate(360deg);
+  animation: textrotate 0.8s linear normal;
+}
+
+@keyframes textrotate {
+  0% {rotate:-360deg;
+    color: red;
+}
+50% {
+  color: violet;
+}
+100% {
+  color: red;
+}
 }
 
 .heart {
